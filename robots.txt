@@ -1,0 +1,2 @@
+User-agent: Googlebot
+Disallow: http://www.qmrs.com.au/safety/wp-content/uploads/2016/08/QMRS-banner003.png

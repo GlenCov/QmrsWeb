@@ -1,0 +1,15 @@
+@charset "utf-8";
+/* CSS Document */
+
+.historyPhoto{
+	
+    width:100%;
+   
+}
+
+.historyPhotolabel{
+text-align: center;
+    size:90%;
+    font-style: italic;
+}
+

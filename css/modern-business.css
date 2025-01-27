@@ -1,0 +1,100 @@
+/*!
+ * Start Bootstrap - Modern Business (https://startbootstrap.com/template-overviews/modern-business)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
+ */
+body {
+	padding-top: 56px;
+}
+.clip-height {
+	width: 100%;
+	max-height: 250px;
+	object-fit: cover;
+	object-position: top;
+	overflow: hidden;
+}
+.carousel-item {
+	height: 40vh;
+	min-height: 300px;
+	background: no-repeat center center scroll;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center;
+}
+.bg-comp {
+	background-image: url("../images/Comp-92fade.jpg");
+	background-position: bottom;
+	background-repeat: no-repeat;
+}
+.christmasdiv {
+	background-image: url("../images/merry-christmas-red-background.jpg");
+	background-size: cover;
+	font-size: 1.3rem;
+	color: white;
+}
+.paddingtopforlink {
+	padding-top: 60px;
+	margin-top: 60px;
+	padding-bottom: 60px;
+	margin-bottom: 60px;
+}
+.bg-qmrs {
+	background: #902e21;
+}
+.text-qmrs {
+	color: #902e21;
+}
+.bg-qmrs-yellow {
+	background: #dab356;
+}
+.text-qmrs-yellow {
+	color: #dab356;
+}
+.btn-qmrs {
+	color: black;
+	font-weight: bold;
+	background-color: #dab356;
+	border-color: #dab356;
+}
+p.trophy:before {
+	content: "";
+	display: block;
+	background: url("../images/trophy-shape.svg") no-repeat;
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin: 0 6px 0 0;
+}
+.portfolio-item {
+	margin-bottom: 30px;
+}
+.historyPhoto {
+	align-content: center;
+	align: center;
+}
+.btn-primary {
+	background-color: #8F2E21 !important;
+	color: white;
+	border: hidden;
+}
+.bg-secondary {
+	background-color: #3E3E3E !important;
+	color: white;
+	border: hidden;
+}
+.card-footer {
+	background-color: #D1CFC8;
+}
+.limitwidth {
+	width: 100%;
+	max-width: 12rem;
+}
+
+
+@media (max-width: 768px) {
+	.carousel-item {
+		height: 14vh;
+	}
+}

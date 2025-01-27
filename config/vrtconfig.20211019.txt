@@ -1,0 +1,554 @@
+########################### --- APPLICATION --- ###########################
+
+# Scenario file to load on startup
+#string
+defaultScenarioFile = /storage/emulated/0/Android/obb/com.vrt.gen4/Scenarios/GAGTraining.rmx
+
+# Replay file to load and play at startup if any
+#string
+playReplayFile = 
+
+# Use the log in screen to track users : default [1]
+#boolean
+useLoginScreen = 0
+
+# the directory to search locally for scenarios
+#string
+scenarioDirectory = /storage/emulated/0/Android/obb/com.vrt.gen4/Scenarios/
+
+# the name of the scene to load as empty scene : default [Underground]
+#string
+defaultEmptyScene = Underground
+
+# The base directory of the statistics, reports, config and input settings : default[]
+#string
+defaultDataPath = /storage/emulated/0/Android/data/com.vrt.gen4/files/
+
+# Extract asset bundles from this zip to internal asset bundle path. Intended for Oculus Device Manager updates. Default is blank
+#string
+assetBundleZipPath = /storage/emulated/0/Android/obb/com.vrt.gen4/assetbundles.zip
+
+
+############################# --- CONTROLS --- ############################
+
+# Path to the file that contains the input setup
+#string
+inputFile = %PROGRAMDATA%\VR Technologies\Gen4\Inputs.txt
+
+# Path to the file that contains the input setup for world view controls
+#string
+inputFileWorldView = %PROGRAMDATA%\VR Technologies\Gen4\InputsWorldView.txt
+
+# Path to the file that contains the input setup for replay controls
+#string
+inputFileReplay = %PROGRAMDATA%\VR Technologies\Gen4\InputsReplay.txt
+
+# [0,1] : [0] Mouse, [1] Inertia Cube : indicates the method to be used in order to operate the flash light
+#boolean
+useInertiaCube = 0
+
+# [0,1] : [0] do not flip the pitch value of the IC3, [1] flip the pitch value of the IC3 : default [0]
+#boolean
+pitchFlipIC3 = 0
+
+# [0,1] : [0] do not flip the yaw value of the IC3, [1] flip the yaw value of the IC3 : default [0]
+#boolean
+yawFlipIC3 = 0
+
+# [0,1] : [0] do not flip the roll value of the IC3, [1] flip the roll value of the IC3 : default [1]
+#boolean
+rollFlipIC3 = 1
+
+# The heading offset for the yaw axis of the IC3 : default [-168.9342]
+#float
+headingOffsetIC3 = -168.9342
+
+# Whether or not to detect disconnected IC3 so auto-reconnection can be attempted : default [1]
+#boolean
+detectIC3Disconnect = 1
+
+# [0,1] Whether or not to invert the joystick x axis
+#boolean
+joystickInvertX = 0
+
+# [0,1] Whether or not to invert the joystick y axis
+#boolean
+joystickInvertY = 0
+
+# The angle offset used to correct the joystick movement : default [0]
+#float
+joystickAngleOffset = 0
+
+# The sensitivity multiplier used to correct the joystick movement : default [1]
+#float
+joystickSensitivity = 1
+
+# The amount of joystick movement to ignore : default [0.24]
+#float
+joystickDeadZone = 0.24
+
+# The type of curve to use to modify the input amount (0 = None, 1 = Exponential) : default [1]
+#boolean
+joystickInputCurve = 1
+
+# Whether or not to use a controller (e.g. Xbox 360 controller) to move the cursor : default [1]
+#boolean
+allowController = 1
+
+# Whether or not the player's head can be controlled using the right stick of the Xbox controller : default [1]
+#boolean
+allowHeadLook = 1
+
+# [0,1] : [0] Don't use the joystick horizontal axis to turn the camera, [1] Use the joystick horizontal axis to turn the camera : default [1]
+#float
+cameraTurning = 1
+
+# Dampen rotation speed of camera with Xbox controller. Lower values are more heavily dampened, [1] is a good value to try. Default [2] (some dampening). Use [9999] For no dampening
+cameraTurnSpeedDampening = 2
+
+# If using camera turning this defines the degrees per seconds the joystick will turn the camera when stationary : default [180]
+#float
+cameraTurnSpeed = 180
+
+# If using camera turning this defines the degrees per seconds the joystick will turn the camera when moving at full speed (non-turbo) : default [30]
+#float
+cameraTurnSpeedMax = 30
+
+# If using camera turning this defines the degrees per seconds the joystick will turn the camera when moving at full speed (with turbo) : default [20]
+#float
+cameraTurnSpeedTurbo = 20
+
+# Whether or not moving the mouse rotates the camera : default [0]
+#boolean
+mouseLook = 0
+
+# Whether or not the player direction matches the VR headset direction : default [0]
+#boolean
+headsetTurning = 0
+
+# Whether or not to hide and lock the cursor in the center of the screen : default [1]
+#boolean
+hideCursor = 1
+
+# Speed to zoom the World View camera when using the mouse scroll wheel : default [0.03]
+#float
+worldViewScrollZoomSpeed = 0.03
+
+# Amount to multiply worldViewScrollZoomSpeed by at full zoom : default [0.3]
+#float
+worldViewScrollZoomSpeedCloseMultiplier = 0.2
+
+# Speed to zoom the World View camera when using a joystick : default [4.0]
+#float
+worldViewStickZoomSpeed = 4.0
+
+# Amount to multiply worldViewStickZoomSpeed by at full zoom : default [0.3]
+#float
+worldViewStickZoomSpeedCloseMultiplier = 0.2
+
+# Speed to pan the World View camera : default [20.0]
+#float
+worldViewPanSpeed = 100.0
+
+# Speed to pan the World View camera when using the turbo button : default [60.0]
+#float
+worldViewPanSpeedTurbo = 500.0
+
+# Amount to multiply worldViewPanSpeed by at full zoom : default [0.3]
+#float
+worldViewPanSpeedCloseMultiplier = 0.15
+
+# Whether the Joystick Y axis is used for vehicle forward input. Enable this if in the 360 or using a racing wheel. (0 = Z Axis, 1 = Y Axis) : default [0]
+#boolean
+vehiclesUseYAxis = 0
+
+# Whether steering uses raw X input or not. Enable this if using a racing wheel, disable it if using a jostick/controller. : default [0]
+#boolean
+vehiclesUseRawXInput = 0
+
+# [0] Arcade: Brake means reverse. Use this to confuse and scare people. [1] Shift between D/N/R. [2] Sequentially move between RN123456 [3] Manual stick shift with clutch : default [0]
+#float
+gearboxControlScheme = 0
+
+
+############################# --- GAMEPLAY --- ############################
+
+# The speed the player will walk (metres per second) : default [3]
+#float
+walkSpeed = 3
+
+# The speed the player will move when using turbo (metres per second) : default [7]
+#float
+turboSpeed = 7
+
+# The name of your player avatar : default is name of the computer
+#string
+playerName = localhost
+
+# Whether or not to player as an observer : default [0]
+#boolean
+observer = 0
+
+# If true uses a thicker raycast when highlighting and interacting with objects : default [1]
+#boolean
+interactableSphereCast = 1
+
+# If true enables the ingame ROCk : default [0]
+#boolean
+inGameEditor = 0
+
+# If true enables interaction popups on interactable items : default [1]
+#boolean
+interactPopups = 1
+
+# The maximum distance from the player that interaction is possible, in metres : default [10]
+#float
+maxInteractDistance = 10
+
+# The radius of the sphere used to spherecast, in metres : default [0.5]
+#float
+interactSphereRadius = 0.5
+
+# If true enables reporting and showing of line of sight breaches : default [1]
+#boolean
+lineOfSightBreachReporting = 1
+
+
+############################# --- DISPLAY --- #############################
+
+# Whether or not to use the camera setup xml file : default [0]
+#boolean
+useCameraSetupXml = 0
+
+# Whether or not to use VSync : default [0]
+#boolean
+vsync = 0
+
+# Whether or not to enabled Oculus Rift camera mode : default [0]
+#boolean
+oculusRift = 1
+
+# Whether or not to exit if the Oculus Entitlement Check fails : default [1]
+#boolean
+oculusRiftEntitlementCheck = 0
+
+# Whether or not to enabled dome camera mode : default [0]
+#boolean
+domeRendering = 0
+
+# Rotation in degrees used to offset camera rotations : default [0]
+#float
+cameraRotationOffset = 0
+
+# What part of the screen between 0 (left-most point) and 1 (right-most point) to treat as the HUD's left-most screen area : default [0]
+#float
+hudScreenMinX = 0
+
+# What part of the screen between 0 (bottom-most point) and 1 (top-most point) to treat as the HUD's bottom-most screen area : default [0]
+#float
+hudScreenMinY = 0
+
+# What part of the screen between 0 (left-most point) and 1 (right-most point) to treat as the HUD's right-most screen area : default [1]
+#float
+hudScreenMaxX = 1
+
+# What part of the screen between 0 (bottom-most point) and 1 (top-most point) to treat as the HUD's top-most screen area : default [1]
+#float
+hudScreenMaxY = 1
+
+# Whether or not to show playback icons when playing replay file : default [0]
+#boolean
+showPlaybackIcons = 1
+
+# Switch between a textured or black splashScreen : default = textured [1]
+#boolean
+texturedLoadingScreen = 1
+
+# size of loadingScreen logo : default [500]
+#float
+logoSize = 500
+
+# positionX of loadingScreen Logo : default [0]
+#float
+logoPositionX = 0
+
+# positionY of loadingScreen Logo : default [0]
+#float
+logoPositionY = 0
+
+# field of view setting in degrees : default [70]
+#float
+fov = 70
+
+# Perceived scale of the world from the oculus in observer mode
+#float
+oculusMineScale = 1
+
+# Near Clip plane for scaled worlds. This is only applied if oculusMineScale is not 1. 7 is a good falue for a scale of 100. 0.75 is a good value for a scale of 10  : default [7]
+#float
+oculusNearClip = 7
+
+
+############################# --- VISUALS --- #############################
+
+# The intensity of the light emitting in all directions from the player : default [0.2]
+#float
+nearLightIntensity = 0.2
+
+# The range in metres of the light that emits from the player : default [30]
+#float
+nearLightRange = 30
+
+# The intensity of the light emitting in all directions from other players in multiplayer : default [0.3]
+#float
+nearLightIntensityOthers = 0.3
+
+# The range in metres of the light that emits from other players in multiplayer : default [30]
+#float
+nearLightRangeOthers = 30
+
+# The falloff distance for the inner cap lamp : default [50.0]
+#float
+capLampInnerRange = 50.0
+
+# The strength of the inner cap lamp : default [1.2]
+#float
+capLampInnerIntensity = 1.2
+
+# The angle of the inner cap lamp cone : default [13.0]
+#float
+capLampInnerAngle = 13.0
+
+# The falloff distance for the inner cap lamp : default [50.0]
+#float
+capLampOuterRange = 50.0
+
+# The strength of the inner cap lamp : default [0.5]
+#float
+capLampOuterIntensity = 0.5
+
+# The angle of the inner cap lamp cone : default [60.0]
+#float
+capLampOuterAngle = 60.0
+
+# The amount to adjust the brightness from the default : default [1.0]
+#float
+brightness = 1.0
+
+# The intensity of the interactable glow effect (0.0 to 1.0)
+#float
+interactableGlow = 1
+
+# Whether or not to use the depth of field effect : default [0]
+#boolean
+depthOfField = 0
+
+# The focal distance when using depth of field : default [7.0]
+#float
+depthOfFieldFocalDistance = 7.0
+
+# The focal range when using depth of field : default [5.0]
+#float
+depthOfFieldFocalRange = 5.0
+
+# The built-in post processing configuration to use : default [0]
+#float
+cameraPostProcessingConfiguration = 0
+
+
+######################### --- GRAPHICS QUALITY --- ########################
+
+# Run in Windowed/Fullscreen mode. [0] windowed, [1] fullscreen : default [1] (fullscreen)
+#boolean
+fullScreen = 1
+
+# The resolution of shadow maps. [0] None, [1] Low, [2] Medium, [3] High, [4] Very High : default [3] (High)
+#float
+shadowResolution = 0
+
+# The downscaled resolution to render smoke particles [0] None (100% resolution), [1] 50% resolution, [2] 25% resolution, [3] 12.5% reoslution : default [0] (50% screen resolution)
+#float
+particleResolution = 0
+
+# Whether or not to use anisotropic filtering on textures : default [1] (On)
+#boolean
+anisotropicFiltering = 1
+
+# The number of bones verticies can be affected by in skinned assets. [1] One Bone, [2] Two Bones, [4] Four Bones : default [4] (Four Bones)
+#float
+skinningQuality = 4
+
+# Sets the quality of textures by limiting their size. [0] Eighth Res, [1] Quarter Res, [2] Half Res, [3] Full Res : default [3] (Full Res)
+#float
+textureQuality = 3
+
+# Whether or not to use anti aliasing : default [1] (On)
+#boolean
+antiAliasing = 1
+
+# Whether or not to use the bloom effect : default [0] (Off)
+#boolean
+bloom = 0
+
+# Whether or not to use the Parallax Occlusion Mapping effect in certain materials : default [1] (On)
+#boolean
+parallaxOcclusionMapping = 1
+
+An approximation of how many pixels the terrain will pop in the worst case when switching LOD. Lower = Looks better, Higher = Faster : default [2.15]
+#float
+terrainPixelError = 2.15
+
+
+############################## --- AUDIO --- ##############################
+
+# [0,1,2,3,4,5,6,7] : [0] Raw, [1] Mono, [2] Stereo, [3] Quad, [4] Surround, [5] 5.1 surround sound, [6] 7.1 surround sound, [7] Prologic : default [2]
+#float
+speakerMode = 2
+
+# Whether or not to allow voice comms : default [0]
+#boolean
+allowVoiceComms = 0
+
+# Whether or not to transmit microphone input when voice comms enabled : default [1]
+#boolean
+voiceCommsMicEnabled = 1
+
+# The volume at which to play received voice comms : default [1.0]
+#float
+voiceReceiveVolume = 1.0
+
+# The volume at which to send voice comms : default [1.0]
+#float
+voiceSendVolume = 1.0
+
+# Size of voice packets : default [640]
+#float
+voiceSendChunkSize = 640
+
+# Whether to use TCP (true) for reliable send or UDP (false) for unreliable but faster send : default [0]
+#boolean
+voiceReliableSend = 0
+
+# Whether to send to each client individually or broadcast to the network : default [0]
+#boolean
+voiceBroadcast = 0
+
+# Wether or not to allow footstep sounds : default [1] = On 
+#boolean
+footStepSound = 1
+
+# Wether or not to allow clothing sounds : default [1] = On 
+#boolean
+clothingSounds = 1
+
+
+############################# --- NETWORK --- #############################
+
+# Whether or not to host a multiplayer server : default [1]
+#boolean
+multiplayerHostServer = 0
+
+# Whether or not to connect to a multiplayer server : default [0]
+#boolean
+multiplayerJoinServer = 1
+
+# The address of the multiplayer server to connect to : default [127.0.0.1]
+#string
+multiplayerJoinIPAddress = 192.168.91.69
+
+# The tcp port to use for the multiplayer server connection : default [5127]
+#float
+multiplayerTCPPort = 5127
+
+# The udp port to use for the multiplayer server connection : default [10020]
+#float
+multiplayerUDPPort1 = 10020
+
+# The udp port to use for the multiplayer server connection : default [10021]
+#float
+multiplayerUDPPort2 = 10021
+
+# The udp port to use for the multiplayer server connection : default [10022]
+#float
+multiplayerUDPPort3 = 10022
+
+
+############################## --- COMMS --- ##############################
+
+# Whether or not to try to connect to a Rock Comms server
+#boolean
+rockCommsActive = 0
+
+# The IP address of the machine running the Rock Comms server application (will add hostname support soon)
+#string
+rockCommsServerIP = 127.0.0.1
+
+# The port the Rock Comms server is to be connected through
+#float
+rockCommsServerPort = 5150
+
+# The name this machine will identify itself as on the server. If left blank, will use the machine's name
+#string
+rockCommsClientName = 
+
+# Whether or not to perform a periodic connection check to the rock server
+#boolean
+rockCommsConnectionCheck = 1
+
+
+############################ --- STATISTICS --- ###########################
+
+# Whether or not to record statistics : default [1]
+#boolean
+recordStatistics = 0
+
+# The email address of the player : default [example@workplace.com]
+#string
+email = example@workplace.com
+
+# The URL to Post the statistics data to
+#string
+statisticsPostUrl = 
+
+# Whether or not to send the replay file with the statistics upload : default [0] (No)
+#boolean
+SendReplayFileWithStatistics = 0
+
+
+############################# --- REPLAYS --- #############################
+
+# Whether or not to record replays and reports to disk when hosting scenarios : default [1]
+#boolean
+recordReplaysAndReports = 0
+
+# Skip to last player connection within this amount of seconds from the start of a replay file
+#float
+ignoreConnectionTimesForSeconds = 30
+
+# Time to skip to when starting a replay if greater than ignoreConnectionTimesForSeconds
+#float
+skipToTime = 0
+
+
+############################## --- DEBUG --- ##############################
+
+# Whether or not to include a log in the reports directory
+#boolean
+reportsDirectoryLog = 1
+
+# Whether or not to log lots of information about voice comms
+#boolean
+debugVoiceComms = 0
+
+# Save location of screenshots taken with TakeScreenshot command
+#string
+screenshotFolderLocation = %PROGRAMDATA%\VR Technologies\Gen4\Screenshots\
+
+
+############################## --- TEMP --- #############################
+
+
+#PRESET:InputDevice=0
+
+#PRESET:DisplayType=1
+
