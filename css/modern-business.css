@@ -92,6 +92,34 @@ p.trophy:before {
 	max-width: 12rem;
 }
 
+.bg-dark {
+    background-color: #343a40 !important;
+}
+
+.cost{
+	background-color: #3e692d;
+	font-weight: bold;
+	color: white;
+	text-align: center;
+	padding: 5px;
+	font-size: 1.2rem;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.warning-box {
+	background-color: #8a1818;
+	font-weight: 600;
+	color: white;
+	text-align: center;
+	padding: 5px;
+	border-radius: 10px;
+}
+
 
 @media (max-width: 768px) {
 	.carousel-item {
