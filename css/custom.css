@@ -101,7 +101,9 @@ p.trophy:before {
 	font-weight: bold;
 	color: white;
 	text-align: center;
-	padding: 5px;
+	padding: 8px;
+	padding-bottom: 15px;
+	border-radius: 0px 0px 10px 10px;
 	font-size: 1.2rem;
 }
 
@@ -119,6 +121,22 @@ a {
 	padding: 5px;
 	border-radius: 10px;
 }
+
+.warning-box-border {
+	background-color: rgba(241, 223, 223, 0.5);
+	font-weight: 600;
+	color: black;
+	text-align: center;
+	padding: 5px;
+	border: 2px solid #8a1818;
+	border-radius: 10px;
+}
+
+.btn-qmrs:hover, .btn-qmrs:focus, .btn-qmrs:active {
+	background-color: #dfb143;
+	text-decoration: none;
+}
+
 
 
 @media (max-width: 768px) {
